@@ -27,6 +27,12 @@ public interface UserRepository {
     CompletableFuture<User> loginUser(String email, String password);
     
     /**
+     * Logout the current user
+     * @return CompletableFuture<Boolean> indicating success
+     */
+    CompletableFuture<Boolean> logoutUser();
+    
+    /**
      * Get current user information
      * @return CompletableFuture with the current User
      */

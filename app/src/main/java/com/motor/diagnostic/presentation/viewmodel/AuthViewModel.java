@@ -80,6 +80,27 @@ public class AuthViewModel extends ViewModel {
     }
     
     /**
+     * Log the current user out
+     */
+    public void logout() {
+        loading.setValue(true);
+        errorMessage.setValue(null);
+        
+        loginUseCase.logout()
+                .thenAccept(success -> {
+                    if (success) {
+                        currentUser.postValue(null);
+                    }
+                    loading.postValue(false);
+                })
+                .exceptionally(e -> {
+                    errorMessage.postValue(e.getMessage());
+                    loading.postValue(false);
+                    return null;
+                });
+    }
+    
+    /**
      * Check if a user is currently logged in
      * @return true if a user is logged in, false otherwise
      */

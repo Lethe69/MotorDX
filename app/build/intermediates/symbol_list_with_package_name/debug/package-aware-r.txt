@@ -3341,6 +3341,13 @@ id btnNotifications
 id btnReviewOtherDiagnostics
 id btnSignUp
 id btnSignup
+id btn_back
+id btn_change_photo
+id btn_edit_profile
+id btn_logout
+id btn_notifications
+id btn_save
+id btn_settings
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3354,6 +3361,8 @@ id cardOil
 id cardRecommendations
 id cardStatus
 id cardTemperature
+id card_settings
+id card_user_info
 id carryVelocity
 id cbTerms
 id center
@@ -3447,6 +3456,11 @@ id etMake
 id etModel
 id etNickname
 id etPassword
+id et_address
+id et_email
+id et_full_name
+id et_nickname
+id et_phone
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3481,6 +3495,7 @@ id grouping
 id groups
 id headerContainer
 id headerLayout
+id header_container
 id header_title
 id hide_ime_id
 id hideable
@@ -3509,6 +3524,8 @@ id ivMotorcycle
 id ivNotificationType
 id ivUserProfile
 id iv_motorcycle
+id iv_profile
+id iv_user_profile
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3646,6 +3663,7 @@ id postLayout
 id pressed
 id profileFragment
 id progressBar
+id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3763,6 +3781,11 @@ id tilMake
 id tilModel
 id tilNickname
 id tilPassword
+id til_address
+id til_email
+id til_full_name
+id til_nickname
+id til_phone
 id time
 id title
 id titleDividerNoCustom
@@ -3820,6 +3843,10 @@ id tvVersion
 id tv_motorcycle_model
 id tv_motorcycle_name
 id tv_motorcycle_year
+id tv_settings_title
+id tv_title
+id tv_user_email
+id tv_user_name
 id unchecked
 id uniform
 id unlabeled
@@ -3986,8 +4013,10 @@ layout design_text_input_start_icon
 layout fragment_add_motorcycle
 layout fragment_dashboard
 layout fragment_diagnostic_detail
+layout fragment_edit_profile
 layout fragment_motorcycles
 layout fragment_notifications
+layout fragment_profile
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_motorcycle

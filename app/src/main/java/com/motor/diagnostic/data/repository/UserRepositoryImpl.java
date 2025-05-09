@@ -340,6 +340,21 @@ public class UserRepositoryImpl implements UserRepository {
     }
     
     @Override
+    public CompletableFuture<Boolean> logoutUser() {
+        CompletableFuture<Boolean> future = new CompletableFuture<>();
+        
+        try {
+            // Sign out from Firebase Auth
+            firebaseAuth.signOut();
+            future.complete(true);
+        } catch (Exception e) {
+            future.completeExceptionally(new Exception("Failed to log out: " + e.getMessage()));
+        }
+        
+        return future;
+    }
+    
+    @Override
     public boolean isUserLoggedIn() {
         return firebaseAuth.getCurrentUser() != null;
     }

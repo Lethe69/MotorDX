@@ -1,19 +1,7 @@
 [
     {
-        "merged": "com.motor.diagnostic.app-merged_res-53:/layout_fragment_add_motorcycle.xml.flat",
-        "source": "com.motor.diagnostic.app-main-55:/layout/fragment_add_motorcycle.xml"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_back.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\ic_back.xml"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_dashboard.xml.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_icon_oil.xml.flat",
@@ -36,32 +24,16 @@
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\item_motorcycle.xml"
     },
     {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_icon_temperature.xml.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\icon_temperature.xml"
-    },
-    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_profile.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\ic_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_motorcycles.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_motorcycles.xml"
     },
     {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_dashboard.xml.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\ic_dashboard.xml"
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_add_motorcycle.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_add_motorcycle.xml"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -100,14 +72,6 @@
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_logo_mobiledx.xml.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\logo_mobiledx.xml"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_diagnostic_detail.xml.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_diagnostic_detail.xml"
-    },
-    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_icon_dashboard.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\icon_dashboard.xml"
     },
@@ -124,6 +88,70 @@
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\placeholder_motorcycle.xml"
     },
     {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_default_profile.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\default_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "com.motor.diagnostic.app-merged_res-53:/drawable_ic_back.xml.flat",
+        "source": "com.motor.diagnostic.app-main-55:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_dashboard.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_icon_temperature.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\icon_temperature.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "com.motor.diagnostic.app-merged_res-53:/layout_fragment_edit_profile.xml.flat",
+        "source": "com.motor.diagnostic.app-main-55:/layout/fragment_edit_profile.xml"
+    },
+    {
+        "merged": "com.motor.diagnostic.app-merged_res-53:/drawable_default_profile.xml.flat",
+        "source": "com.motor.diagnostic.app-main-55:/drawable/default_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_dashboard.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\ic_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_logo_mobiledx.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\logo_mobiledx.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_diagnostic_detail.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_diagnostic_detail.xml"
+    },
+    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_disconnected_indicator.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\disconnected_indicator.xml"
     },
@@ -136,20 +164,8 @@
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_default_profile.xml.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\default_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\menu\\bottom_nav_menu.xml"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_battery.xml.flat",

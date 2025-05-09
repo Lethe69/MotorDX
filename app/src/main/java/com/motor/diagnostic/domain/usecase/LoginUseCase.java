@@ -40,6 +40,14 @@ public class LoginUseCase {
     }
     
     /**
+     * Logout the current user
+     * @return CompletableFuture<Boolean> indicating success
+     */
+    public CompletableFuture<Boolean> logout() {
+        return userRepository.logoutUser();
+    }
+    
+    /**
      * Check if a user is currently logged in
      * @return true if a user is logged in, false otherwise
      */
