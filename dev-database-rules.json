@@ -1,0 +1,41 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    
+    "users": {
+      ".read": true,
+      ".write": true
+    },
+    
+    "motorcycles": {
+      ".read": true,
+      ".write": true
+    },
+    
+    "diagnostics": {
+      ".read": true,
+      ".write": true
+    },
+    
+    "connections": {
+      ".read": true,
+      ".write": true
+    },
+    
+    "diagnosticData": {
+      ".read": true,
+      ".write": true
+    },
+    
+    "notifications": {
+      ".read": true,
+      ".write": true
+    },
+    
+    "app_verification": {
+      ".read": true,
+      ".write": true
+    }
+  }
+} 
