@@ -336,7 +336,12 @@ public class UserRepositoryImpl implements UserRepository {
     
     @Override
     public void signOut() {
+        // First sign out from Firebase Auth
         firebaseAuth.signOut();
+        
+        // Clear any cached data or references
+        // This would be where you'd clear any in-memory cache or tokens
+        Log.d("UserRepository", "Clearing user data cache");
     }
     
     @Override
@@ -346,8 +351,22 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             // Sign out from Firebase Auth
             firebaseAuth.signOut();
-            future.complete(true);
+            
+            // Clear any cached data
+            signOut();
+            
+            // Verify that the user is actually logged out
+            if (firebaseAuth.getCurrentUser() == null) {
+                // Successfully logged out
+                Log.d("UserRepository", "User successfully logged out");
+                future.complete(true);
+            } else {
+                // Failed to log out
+                Log.e("UserRepository", "Failed to log out user, still logged in");
+                future.completeExceptionally(new Exception("Failed to log out user completely"));
+            }
         } catch (Exception e) {
+            Log.e("UserRepository", "Error during logout: " + e.getMessage(), e);
             future.completeExceptionally(new Exception("Failed to log out: " + e.getMessage()));
         }
         

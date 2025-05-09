@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.motor.diagnostic.app-merged_res-53:/layout_fragment_settings.xml.flat",
+        "source": "com.motor.diagnostic.app-main-55:/layout/fragment_settings.xml"
+    },
+    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_back.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\ic_back.xml"
     },
@@ -16,12 +20,12 @@
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\icon_engine.xml"
     },
     {
-        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_item_motorcycle.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\item_motorcycle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_profile.xml.flat",
@@ -104,16 +108,16 @@
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "com.motor.diagnostic.app-merged_res-53:/drawable_ic_back.xml.flat",
-        "source": "com.motor.diagnostic.app-main-55:/drawable/ic_back.xml"
-    },
-    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_dashboard.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.motor.diagnostic.app-merged_res-53:/drawable_ic_notification.xml.flat",
+        "source": "com.motor.diagnostic.app-main-55:/drawable/ic_notification.xml"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\mipmap-mdpi_ic_launcher_round.png.flat",
@@ -132,16 +136,12 @@
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.motor.diagnostic.app-merged_res-53:/layout_fragment_edit_profile.xml.flat",
-        "source": "com.motor.diagnostic.app-main-55:/layout/fragment_edit_profile.xml"
-    },
-    {
-        "merged": "com.motor.diagnostic.app-merged_res-53:/drawable_default_profile.xml.flat",
-        "source": "com.motor.diagnostic.app-main-55:/drawable/default_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_ic_dashboard.xml.flat",
         "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\drawable\\ic_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\layout_fragment_edit_profile.xml.flat",
+        "source": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-55:\\layout\\fragment_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\Nanik\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-merged_res-53:\\drawable_logo_mobiledx.xml.flat",

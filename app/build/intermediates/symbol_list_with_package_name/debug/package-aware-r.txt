@@ -3341,6 +3341,7 @@ id btnNotifications
 id btnReviewOtherDiagnostics
 id btnSignUp
 id btnSignup
+id btn_about
 id btn_back
 id btn_change_photo
 id btn_edit_profile
@@ -3745,6 +3746,9 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id switchConnect
+id switch_dark_theme
+id switch_data_sync
+id switch_notifications
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3840,9 +3844,17 @@ id tvUpdateLabel
 id tvUpdateTime
 id tvUsername
 id tvVersion
+id tv_about_desc
+id tv_about_title
+id tv_dark_theme_desc
+id tv_dark_theme_title
+id tv_data_sync_desc
+id tv_data_sync_title
 id tv_motorcycle_model
 id tv_motorcycle_name
 id tv_motorcycle_year
+id tv_notifications_desc
+id tv_notifications_title
 id tv_settings_title
 id tv_title
 id tv_user_email
@@ -4017,6 +4029,7 @@ layout fragment_edit_profile
 layout fragment_motorcycles
 layout fragment_notifications
 layout fragment_profile
+layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_motorcycle

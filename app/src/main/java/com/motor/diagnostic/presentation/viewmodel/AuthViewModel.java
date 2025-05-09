@@ -86,16 +86,33 @@ public class AuthViewModel extends ViewModel {
         loading.setValue(true);
         errorMessage.setValue(null);
         
+        // First check if there's actually a logged-in user
+        if (!isUserLoggedIn()) {
+            // Already logged out
+            currentUser.postValue(null);
+            loading.postValue(false);
+            return;
+        }
+        
         loginUseCase.logout()
                 .thenAccept(success -> {
                     if (success) {
+                        // Clear current user in the ViewModel
                         currentUser.postValue(null);
+                    } else {
+                        errorMessage.postValue("Logout was not successful");
                     }
                     loading.postValue(false);
                 })
                 .exceptionally(e -> {
-                    errorMessage.postValue(e.getMessage());
+                    errorMessage.postValue("Error during logout: " + e.getMessage());
                     loading.postValue(false);
+                    
+                    // Even if there was an error, check if the user is actually logged out
+                    if (!isUserLoggedIn()) {
+                        currentUser.postValue(null);
+                    }
+                    
                     return null;
                 });
     }

@@ -1,5 +1,6 @@
 package com.motor.diagnostic.presentation.ui.profile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,10 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.motor.diagnostic.R;
 import com.motor.diagnostic.databinding.FragmentProfileBinding;
 import com.motor.diagnostic.presentation.di.ViewModelModule;
+import com.motor.diagnostic.presentation.ui.authentication.LoginActivity;
 import com.motor.diagnostic.presentation.viewmodel.AuthViewModel;
 
 /**
@@ -24,6 +28,7 @@ public class ProfileFragment extends Fragment {
     
     private FragmentProfileBinding binding;
     private AuthViewModel viewModel;
+    private NavController navController;
     private static final String TAG = "ProfileFragment";
     
     @Override
@@ -43,6 +48,9 @@ public class ProfileFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         
         try {
+            // Initialize NavController
+            navController = Navigation.findNavController(view);
+            
             // Initialize ViewModel
             viewModel = new ViewModelProvider(requireActivity(), ViewModelModule.provideViewModelFactory())
                     .get(AuthViewModel.class);
@@ -52,6 +60,18 @@ public class ProfileFragment extends Fragment {
             
             // Set up click listeners
             setupClickListeners();
+            
+            // Observe loading status
+            viewModel.getLoading().observe(getViewLifecycleOwner(), isLoading -> {
+                binding.progressBar.setVisibility(isLoading ? View.VISIBLE : View.GONE);
+            });
+            
+            // Observe error messages
+            viewModel.getErrorMessage().observe(getViewLifecycleOwner(), error -> {
+                if (error != null && !error.isEmpty()) {
+                    Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show();
+                }
+            });
             
         } catch (Exception e) {
             Log.e(TAG, "Error in onViewCreated", e);
@@ -78,27 +98,66 @@ public class ProfileFragment extends Fragment {
     private void setupClickListeners() {
         binding.btnEditProfile.setOnClickListener(v -> {
             // Navigate to edit profile screen
-            // Navigation.findNavController(v).navigate(R.id.action_profileFragment_to_editProfileFragment);
-            Toast.makeText(requireContext(), "Edit Profile - Feature coming soon", Toast.LENGTH_SHORT).show();
+            try {
+                navController.navigate(R.id.action_profileFragment_to_editProfileFragment);
+            } catch (Exception e) {
+                Log.e(TAG, "Navigation to Edit Profile failed", e);
+                Toast.makeText(requireContext(), "Navigation failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
         });
         
         binding.btnNotifications.setOnClickListener(v -> {
             // Navigate to notifications screen
-            // Navigation.findNavController(v).navigate(R.id.action_profileFragment_to_notificationsFragment);
-            Toast.makeText(requireContext(), "Notifications - Feature coming soon", Toast.LENGTH_SHORT).show();
+            try {
+                navController.navigate(R.id.action_profileFragment_to_notificationsFragment);
+            } catch (Exception e) {
+                Log.e(TAG, "Navigation to Notifications failed", e);
+                Toast.makeText(requireContext(), "Navigation failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
         });
         
         binding.btnSettings.setOnClickListener(v -> {
             // Navigate to settings screen
-            // Navigation.findNavController(v).navigate(R.id.action_profileFragment_to_settingsFragment);
-            Toast.makeText(requireContext(), "Settings - Feature coming soon", Toast.LENGTH_SHORT).show();
+            try {
+                navController.navigate(R.id.action_profileFragment_to_settingsFragment);
+            } catch (Exception e) {
+                Log.e(TAG, "Navigation to Settings failed", e);
+                Toast.makeText(requireContext(), "Navigation failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
         });
         
         binding.btnLogout.setOnClickListener(v -> {
+            // Show loading
+            binding.progressBar.setVisibility(View.VISIBLE);
+            
             // Log out the user
             viewModel.logout();
-            Toast.makeText(requireContext(), "Logged out successfully", Toast.LENGTH_SHORT).show();
+            
+            // Observe changes in user login status
+            viewModel.getCurrentUser().observe(getViewLifecycleOwner(), user -> {
+                if (user == null) {
+                    // User is logged out, navigate to login screen
+                    navigateToLogin();
+                }
+            });
+            
+            // Add a direct check for logged-in status after logout call
+            if (!viewModel.isUserLoggedIn()) {
+                navigateToLogin();
+            }
         });
+    }
+    
+    private void navigateToLogin() {
+        try {
+            Intent loginIntent = new Intent(requireActivity(), LoginActivity.class);
+            loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(loginIntent);
+            requireActivity().finish();
+        } catch (Exception e) {
+            Log.e(TAG, "Error navigating to login", e);
+            Toast.makeText(requireContext(), "Error logging out: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
     }
     
     @Override
