@@ -47,7 +47,8 @@
             
         <activity
             android:name=".presentation.ui.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="uiMode|orientation|screenSize|screenLayout|keyboardHidden" />
             
     </application>
 

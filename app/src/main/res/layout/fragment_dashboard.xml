@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light">
+    android:background="?attr/colorBackgroundPrimary">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary"
+        android:background="?attr/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +25,9 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/default_profile"
             app:civ_border_color="@color/white"
             app:civ_border_width="2dp"
@@ -35,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="HI,"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorTextLight"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivUserProfile"
@@ -46,9 +52,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:maxLines="1"
             android:text="puerto_rico"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorTextLight"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/tvGreeting"
@@ -64,7 +73,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/white" />
+            app:tint="?attr/colorTextLight" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -75,7 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/update_as_of"
-        android:textColor="@color/text_primary"
+        android:textColor="?attr/colorTextPrimary"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="13:23, 1/5/2025"
-        android:textColor="@color/text_primary"
+        android:textColor="?attr/colorTextPrimary"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/tvUpdateLabel"
         app:layout_constraintStart_toEndOf="@+id/tvUpdateLabel"
@@ -100,6 +109,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="?attr/colorCardBackground"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +125,7 @@
                 android:id="@+id/gaugeBackground"
                 android:layout_width="0dp"
                 android:layout_height="16dp"
-                android:background="@color/gauge_background"
+                android:background="?attr/colorGaugeBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -135,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/average_speed"
-                android:textColor="@color/text_secondary"
+                android:textColor="?attr/colorTextSecondary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gaugeBackground" />
@@ -146,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="70 km/h"
-                android:textColor="@color/text_primary"
+                android:textColor="?attr/colorTextPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -158,31 +168,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/mil"
-                android:textColor="@color/text_secondary"
+                android:textColor="?attr/colorTextSecondary"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gaugeBackground" />
-
-            <TextView
-                android:id="@+id/tvMilValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="0004231"
-                android:textColor="@color/text_primary"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvMilLabel" />
 
             <TextView
                 android:id="@+id/tvTripLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
+                android:layout_marginEnd="8dp"
                 android:text="@string/trip"
-                android:textColor="@color/text_secondary"
+                android:textColor="?attr/colorTextSecondary"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/tvMilLabel"
                 app:layout_constraintTop_toBottomOf="@+id/gaugeBackground" />
@@ -192,12 +190,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="0001001"
-                android:textColor="@color/text_primary"
+                android:text="382 / 5432"
+                android:textColor="?attr/colorTextPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/tvTripLabel"
-                app:layout_constraintStart_toStartOf="@+id/tvTripLabel"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvTripLabel" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -211,185 +208,272 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/primary"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="@string/review_other_diagnostics"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorTextLight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardGauge" />
 
-    <LinearLayout
-        android:id="@+id/diagnosticsContainer"
+    <ScrollView
+        android:id="@+id/diagnosticsScrollView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnChooseMotorcycle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnReviewOtherDiagnostics">
 
         <LinearLayout
+            android:id="@+id/diagnosticsContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardBattery"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="2dp">
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardBattery"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="@string/battery_status"
-                        android:src="@drawable/ic_battery" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/battery_status"
-                        android:textColor="@color/text_primary"
-                        android:textSize="12sp" />
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/battery_status"
+                            android:src="@drawable/ic_battery" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardOil"
-                android:layout_width="0dp"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/battery_status"
+                            android:textColor="?attr/colorTextPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardOil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/oil_status"
+                            android:src="@drawable/ic_oil" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/oil_status"
+                            android:textColor="?attr/colorTextPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="2dp">
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardEngine"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="@string/oil_status"
-                        android:src="@drawable/ic_oil" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/oil_status"
-                        android:textColor="@color/text_primary"
-                        android:textSize="12sp" />
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/engine_status"
+                            android:src="@drawable/ic_engine" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/engine_status"
+                            android:textColor="?attr/colorTextPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTemperature"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/temperature_status"
+                            android:src="@drawable/ic_temperature" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/temperature_status"
+                            android:textColor="?attr/colorTextPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFuel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="Fuel Level"
+                            android:src="@drawable/icon_fuel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/fuel_status"
+                            android:textColor="?attr/colorTextPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardThrottle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="Throttle Position"
+                            android:src="@drawable/icon_throttle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/throttle_status"
+                            android:textColor="?attr/colorTextPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardEngine"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="@string/engine_status"
-                        android:src="@drawable/ic_engine" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/engine_status"
-                        android:textColor="@color/text_primary"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardTemperature"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:contentDescription="@string/temperature_status"
-                        android:src="@drawable/ic_temperature" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/temperature_status"
-                        android:textColor="@color/text_primary"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/btnChooseMotorcycle"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@android:color/transparent"
+        android:layout_marginBottom="16dp"
         android:text="@string/choose_motorcycle_profiles"
-        android:textColor="@color/primary"
-        app:strokeColor="@color/primary"
-        app:strokeWidth="1dp"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diagnosticsContainer" />
+        app:strokeColor="?attr/colorPrimary" />
 
     <FrameLayout
         android:id="@+id/noDataContainer"
@@ -414,7 +498,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="@string/no_motorcycle_profiles"
                 android:textAlignment="center"
-                android:textColor="@color/text_primary"
+                android:textColor="?attr/colorTextPrimary"
                 android:textSize="18sp" />
 
             <ImageView
@@ -432,7 +516,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tap_to_diagnose"
                 android:textAlignment="center"
-                android:textColor="@color/text_secondary"
+                android:textColor="?attr/colorTextSecondary"
                 android:textSize="14sp" />
 
         </LinearLayout>
